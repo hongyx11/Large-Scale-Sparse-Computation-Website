@@ -1,0 +1,81 @@
+version: 1
+project:
+  title: Large-Scale Sparse Computation
+  subtitle: From Kernels to Applications
+  authors:
+    - name: Yuxi Hong
+  copyright: "2026"
+  bibliography:
+    - references.bib
+  toc:
+    - file: intro.md
+    - file: about.md
+    - file: chapters/00_reading_guide.md
+      children:
+        - title: Learning path
+          url: /chapters/reading-guide#learning-path
+        - title: What to focus on
+          url: /chapters/reading-guide#what-to-focus-on
+        - title: When to run code
+          url: /chapters/reading-guide#when-to-run-code
+    - file: chapters/01_sparse_matrices.ipynb
+      children:
+        - title: Sparse storage model
+          url: /chapters/sparse-matrices#sparse-storage-model
+        - title: A first sparse matrix
+          url: /chapters/sparse-matrices#a-first-sparse-matrix
+        - title: CSR internals
+          url: /chapters/sparse-matrices#csr-internals
+        - title: Storage scaling
+          url: /chapters/sparse-matrices#storage-scaling
+    - file: chapters/02_spmv.ipynb
+      children:
+        - title: Operation definition
+          url: /chapters/spmv#operation-definition
+        - title: Basic performance model
+          url: /chapters/spmv#basic-performance-model
+        - title: Row balance
+          url: /chapters/spmv#row-balance
+    - file: chapters/03_iterative_solvers.ipynb
+      children:
+        - title: Krylov methods
+          url: /chapters/iterative-solvers#krylov-methods
+        - title: Residual tracking
+          url: /chapters/iterative-solvers#residual-tracking
+        - title: Jacobi preconditioning
+          url: /chapters/iterative-solvers#jacobi-preconditioning
+        - title: Random plot test
+          url: /chapters/iterative-solvers#random-plot-test
+        - title: Takeaways
+          url: /chapters/iterative-solvers#takeaways
+  exports:
+    - format: pdf
+      articles:
+        - intro.md
+        - chapters/00_reading_guide.md
+        - chapters/01_sparse_matrices.ipynb
+        - chapters/02_spmv.ipynb
+        - chapters/03_iterative_solvers.ipynb
+        - chapters/99_references.md
+      output: _build/exports/lssc.pdf
+    - format: tex
+      articles:
+        - intro.md
+        - chapters/00_reading_guide.md
+        - chapters/01_sparse_matrices.ipynb
+        - chapters/02_spmv.ipynb
+        - chapters/03_iterative_solvers.ipynb
+        - chapters/99_references.md
+      output: _build/exports/lssc-tex
+site:
+  template: book-theme
+  options:
+    favicon: favicon.ico
+    folders: true
+    logo: assets/indexlab.png
+    logo_alt: IndexLab
+    logo_text: Large-Scale Sparse Computation
+    style: styles/myst-overrides.css
+  parts:
+    primary_sidebar_footer:
+      - Large-Scale Sparse Computation

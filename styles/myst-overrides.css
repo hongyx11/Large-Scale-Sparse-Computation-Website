@@ -1,0 +1,116 @@
+.intro-top-image {
+  margin: -1.25rem 0 1.75rem;
+}
+
+.intro-top-image picture,
+.intro-top-image img {
+  display: block;
+  width: 100%;
+}
+
+.intro-top-image img {
+  height: clamp(220px, 34vw, 420px);
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.intro-top-image figcaption {
+  margin-top: 0.65rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+body:has(#overview:target) .myst-outline-item:has(> a[href="#overview"]),
+body:has(#how-to-read-this-book:target) .myst-outline-item:has(> a[href="#how-to-read-this-book"]),
+body:has(#tools-used:target) .myst-outline-item:has(> a[href="#tools-used"]),
+body:has(#why-sparsity-matters:target) .myst-outline-item:has(> a[href="#why-sparsity-matters"]),
+body:has(#chapters:target) .myst-outline-item:has(> a[href="#chapters"]),
+body:has(#learning-path:target) .myst-outline-item:has(> a[href="#learning-path"]),
+body:has(#what-to-focus-on:target) .myst-outline-item:has(> a[href="#what-to-focus-on"]),
+body:has(#when-to-run-code:target) .myst-outline-item:has(> a[href="#when-to-run-code"]),
+body:has(#sparse-storage-model:target) .myst-outline-item:has(> a[href="#sparse-storage-model"]),
+body:has(#a-first-sparse-matrix:target) .myst-outline-item:has(> a[href="#a-first-sparse-matrix"]),
+body:has(#csr-internals:target) .myst-outline-item:has(> a[href="#csr-internals"]),
+body:has(#storage-scaling:target) .myst-outline-item:has(> a[href="#storage-scaling"]),
+body:has(#operation-definition:target) .myst-outline-item:has(> a[href="#operation-definition"]),
+body:has(#basic-performance-model:target) .myst-outline-item:has(> a[href="#basic-performance-model"]),
+body:has(#row-balance:target) .myst-outline-item:has(> a[href="#row-balance"]),
+body:has(#krylov-methods:target) .myst-outline-item:has(> a[href="#krylov-methods"]),
+body:has(#residual-tracking:target) .myst-outline-item:has(> a[href="#residual-tracking"]),
+body:has(#jacobi-preconditioning:target) .myst-outline-item:has(> a[href="#jacobi-preconditioning"]),
+body:has(#random-plot-test:target) .myst-outline-item:has(> a[href="#random-plot-test"]),
+body:has(#takeaways:target) .myst-outline-item:has(> a[href="#takeaways"]) {
+  border-left-color: rgb(59 130 246);
+  background: rgb(239 246 255);
+}
+
+.dark body:has(#overview:target) .myst-outline-item:has(> a[href="#overview"]),
+.dark body:has(#how-to-read-this-book:target) .myst-outline-item:has(> a[href="#how-to-read-this-book"]),
+.dark body:has(#tools-used:target) .myst-outline-item:has(> a[href="#tools-used"]),
+.dark body:has(#why-sparsity-matters:target) .myst-outline-item:has(> a[href="#why-sparsity-matters"]),
+.dark body:has(#chapters:target) .myst-outline-item:has(> a[href="#chapters"]),
+.dark body:has(#learning-path:target) .myst-outline-item:has(> a[href="#learning-path"]),
+.dark body:has(#what-to-focus-on:target) .myst-outline-item:has(> a[href="#what-to-focus-on"]),
+.dark body:has(#when-to-run-code:target) .myst-outline-item:has(> a[href="#when-to-run-code"]),
+.dark body:has(#sparse-storage-model:target) .myst-outline-item:has(> a[href="#sparse-storage-model"]),
+.dark body:has(#a-first-sparse-matrix:target) .myst-outline-item:has(> a[href="#a-first-sparse-matrix"]),
+.dark body:has(#csr-internals:target) .myst-outline-item:has(> a[href="#csr-internals"]),
+.dark body:has(#storage-scaling:target) .myst-outline-item:has(> a[href="#storage-scaling"]),
+.dark body:has(#operation-definition:target) .myst-outline-item:has(> a[href="#operation-definition"]),
+.dark body:has(#basic-performance-model:target) .myst-outline-item:has(> a[href="#basic-performance-model"]),
+.dark body:has(#row-balance:target) .myst-outline-item:has(> a[href="#row-balance"]),
+.dark body:has(#krylov-methods:target) .myst-outline-item:has(> a[href="#krylov-methods"]),
+.dark body:has(#residual-tracking:target) .myst-outline-item:has(> a[href="#residual-tracking"]),
+.dark body:has(#jacobi-preconditioning:target) .myst-outline-item:has(> a[href="#jacobi-preconditioning"]),
+.dark body:has(#random-plot-test:target) .myst-outline-item:has(> a[href="#random-plot-test"]),
+.dark body:has(#takeaways:target) .myst-outline-item:has(> a[href="#takeaways"]) {
+  background: rgb(30 41 59);
+}
+
+body:has(#overview:target) .myst-outline-item:has(> a[href="#overview"]) > a,
+body:has(#how-to-read-this-book:target) .myst-outline-item:has(> a[href="#how-to-read-this-book"]) > a,
+body:has(#tools-used:target) .myst-outline-item:has(> a[href="#tools-used"]) > a,
+body:has(#why-sparsity-matters:target) .myst-outline-item:has(> a[href="#why-sparsity-matters"]) > a,
+body:has(#chapters:target) .myst-outline-item:has(> a[href="#chapters"]) > a,
+body:has(#learning-path:target) .myst-outline-item:has(> a[href="#learning-path"]) > a,
+body:has(#what-to-focus-on:target) .myst-outline-item:has(> a[href="#what-to-focus-on"]) > a,
+body:has(#when-to-run-code:target) .myst-outline-item:has(> a[href="#when-to-run-code"]) > a,
+body:has(#sparse-storage-model:target) .myst-outline-item:has(> a[href="#sparse-storage-model"]) > a,
+body:has(#a-first-sparse-matrix:target) .myst-outline-item:has(> a[href="#a-first-sparse-matrix"]) > a,
+body:has(#csr-internals:target) .myst-outline-item:has(> a[href="#csr-internals"]) > a,
+body:has(#storage-scaling:target) .myst-outline-item:has(> a[href="#storage-scaling"]) > a,
+body:has(#operation-definition:target) .myst-outline-item:has(> a[href="#operation-definition"]) > a,
+body:has(#basic-performance-model:target) .myst-outline-item:has(> a[href="#basic-performance-model"]) > a,
+body:has(#row-balance:target) .myst-outline-item:has(> a[href="#row-balance"]) > a,
+body:has(#krylov-methods:target) .myst-outline-item:has(> a[href="#krylov-methods"]) > a,
+body:has(#residual-tracking:target) .myst-outline-item:has(> a[href="#residual-tracking"]) > a,
+body:has(#jacobi-preconditioning:target) .myst-outline-item:has(> a[href="#jacobi-preconditioning"]) > a,
+body:has(#random-plot-test:target) .myst-outline-item:has(> a[href="#random-plot-test"]) > a,
+body:has(#takeaways:target) .myst-outline-item:has(> a[href="#takeaways"]) > a {
+  color: rgb(37 99 235);
+  font-weight: 700;
+}
+
+.dark body:has(#overview:target) .myst-outline-item:has(> a[href="#overview"]) > a,
+.dark body:has(#how-to-read-this-book:target) .myst-outline-item:has(> a[href="#how-to-read-this-book"]) > a,
+.dark body:has(#tools-used:target) .myst-outline-item:has(> a[href="#tools-used"]) > a,
+.dark body:has(#why-sparsity-matters:target) .myst-outline-item:has(> a[href="#why-sparsity-matters"]) > a,
+.dark body:has(#chapters:target) .myst-outline-item:has(> a[href="#chapters"]) > a,
+.dark body:has(#learning-path:target) .myst-outline-item:has(> a[href="#learning-path"]) > a,
+.dark body:has(#what-to-focus-on:target) .myst-outline-item:has(> a[href="#what-to-focus-on"]) > a,
+.dark body:has(#when-to-run-code:target) .myst-outline-item:has(> a[href="#when-to-run-code"]) > a,
+.dark body:has(#sparse-storage-model:target) .myst-outline-item:has(> a[href="#sparse-storage-model"]) > a,
+.dark body:has(#a-first-sparse-matrix:target) .myst-outline-item:has(> a[href="#a-first-sparse-matrix"]) > a,
+.dark body:has(#csr-internals:target) .myst-outline-item:has(> a[href="#csr-internals"]) > a,
+.dark body:has(#storage-scaling:target) .myst-outline-item:has(> a[href="#storage-scaling"]) > a,
+.dark body:has(#operation-definition:target) .myst-outline-item:has(> a[href="#operation-definition"]) > a,
+.dark body:has(#basic-performance-model:target) .myst-outline-item:has(> a[href="#basic-performance-model"]) > a,
+.dark body:has(#row-balance:target) .myst-outline-item:has(> a[href="#row-balance"]) > a,
+.dark body:has(#krylov-methods:target) .myst-outline-item:has(> a[href="#krylov-methods"]) > a,
+.dark body:has(#residual-tracking:target) .myst-outline-item:has(> a[href="#residual-tracking"]) > a,
+.dark body:has(#jacobi-preconditioning:target) .myst-outline-item:has(> a[href="#jacobi-preconditioning"]) > a,
+.dark body:has(#random-plot-test:target) .myst-outline-item:has(> a[href="#random-plot-test"]) > a,
+.dark body:has(#takeaways:target) .myst-outline-item:has(> a[href="#takeaways"]) > a {
+  color: white;
+}
