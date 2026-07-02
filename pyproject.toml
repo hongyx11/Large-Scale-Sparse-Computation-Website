@@ -10,4 +10,5 @@ dependencies = [
     "nbconvert>=7.17.1",
     "numpy>=2.5.0",
     "scipy>=1.18.0",
+    "mystmd>=1.10.1",
 ]

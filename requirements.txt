@@ -112,6 +112,8 @@ matplotlib-inline==0.2.2
     #   ipython
 mistune==3.3.2
     # via nbconvert
+mystmd==1.10.1
+    # via lssc
 nbclient==0.11.0
     # via nbconvert
 nbconvert==7.17.1
@@ -125,8 +127,10 @@ nbformat==5.10.4
     #   nbconvert
 nest-asyncio2==1.7.2
     # via ipykernel
-nodeenv==1.10.0
-    # via jupyter-book
+nodeenv==1.9.1
+    # via
+    #   jupyter-book
+    #   mystmd
 numpy==2.5.0
     # via
     #   contourpy
@@ -148,10 +152,11 @@ pexpect==4.9.0 ; sys_platform != 'emscripten' and sys_platform != 'win32'
     # via ipython
 pillow==12.3.0
     # via matplotlib
-platformdirs==4.10.0
+platformdirs==4.2.2
     # via
     #   jupyter-book
     #   jupyter-core
+    #   mystmd
 prometheus-client==0.25.0
     # via jupyter-server
 prompt-toolkit==3.0.52
