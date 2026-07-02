@@ -6,9 +6,8 @@ authors:
   - name: Yuxi Hong
     email: yuxi.hong.research@gmail.com
     orcid: 0000-0002-0741-6602
-    url: https://scholar.google.com/citations?user=YOUR_ID  # Use 'url' for Google Scholar
+    url: https://luddy.iu.edu/people/hong-yuxi.html
     github: hongyx11
-    twitter: yourhandle
     affiliation: ISE, Indiana University Bloomington
 ---
 
