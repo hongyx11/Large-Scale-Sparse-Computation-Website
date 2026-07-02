@@ -12,7 +12,7 @@ authors:
     affiliation: ISE, Indiana University Bloomington
 ---
 
-```{figure} assets/cats-paw-16-2.jpg
+```{figure} ../assets/cats-paw-16-2.jpg
 :alt: Cat's Paw Nebula
 :class: intro-top-image
 

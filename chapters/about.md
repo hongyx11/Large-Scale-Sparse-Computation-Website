@@ -6,7 +6,7 @@ site:
 
 # Yuxi Hong
 
-```{figure} assets/newphoto.jpg
+```{figure} ../assets/newphoto.jpg
 :alt: Cat's Paw Nebula
 :width: 400px
 Yuxi Hong \
