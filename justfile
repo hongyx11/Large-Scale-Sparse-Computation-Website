@@ -4,9 +4,13 @@
 build:
 	.venv/bin/jupyter-book build --html --force
 
-# Export the website to PDF and LaTeX
+# Export the website to PDF
 pdf:
-	.venv/bin/jupyter-book build --pdf --tex --force
+	.venv/bin/jupyter-book build --pdf --force
+
+# Export the website to TeX/LaTeX
+tex:
+	.venv/bin/jupyter-book build --tex --force
 
 # Execute all notebooks in the chapters directory in-place
 execute:
