@@ -22,5 +22,6 @@ serve:
 
 # Auto-generate the table of contents (TOC) in myst.yml
 toc:
-	@.venv/bin/python scripts/generate_toc.py
+	@.venv/bin/python scripts/generate_toc.py --before
 	.venv/bin/myst init --write-toc
+	@.venv/bin/python scripts/generate_toc.py --after
