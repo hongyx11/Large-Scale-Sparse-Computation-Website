@@ -48,6 +48,7 @@ project:
           url: /chapters/iterative-solvers#random-plot-test
         - title: Takeaways
           url: /chapters/iterative-solvers#takeaways
+    - file: chapters/99_references.md
   exports:
     - format: pdf
       articles:
