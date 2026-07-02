@@ -28,7 +28,10 @@ project:
       output: _build/exports/lssc-tex
   toc:
     - file: chapters/intro.md
-    - file: chapters/about.md
+    - title: Course Introduction
+      children:
+        - file: chapters/aboutme.md
+        - file: chapters/syllabus.md
     - title: Chapters
       children:
         - file: chapters/00_reading_guide.md
@@ -36,7 +39,6 @@ project:
         - file: chapters/02_spmv.ipynb
         - file: chapters/03_iterative_solvers.ipynb
         - file: chapters/large_scale_sparse_computation.ipynb
-        - file: chapters/syllabus.md
         - file: chapters/99_references.md
 site:
   template: book-theme
@@ -45,8 +47,8 @@ site:
     folders: true
     logo: assets/indexlab.png
     logo_alt: IndexLab
-    logo_text: Large-Scale Sparse Computation
+    logo_text: LSSC
     style: styles/myst-overrides.css
   parts:
     primary_sidebar_footer:
-      - Large-Scale Sparse Computation
+      - LSSC
