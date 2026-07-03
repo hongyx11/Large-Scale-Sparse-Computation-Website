@@ -2,6 +2,11 @@
 
 Example Jupyter Book 2 source for notes on large scale sparse computation.
 
+## Website
+
+The course site is published with GitHub Pages at
+https://hongyx11.github.io/Large-Scale-Sparse-Computation-Website/.
+
 ## Build
 
 ```bash
